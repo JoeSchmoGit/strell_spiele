@@ -8,34 +8,34 @@ public class Spiel
     private int preis;
     
     
-    public Spiel(String neuTitel, int neuSpieler, boolean neuOnline)
+    public Spiel(String titel, int spieler, boolean online)
     {
-        setTitel(neuTitel);
-        setSpieler(neuSpieler);
-        setOnline(neuOnline);
+        setTitel(titel);
+        setSpieler(spieler);
+        setOnline(online);
         
     }
     
-    public Spiel(String neuTitel, boolean neuOnline, boolean neuMehrspieler, int neuSpieler, int neuPreis)
+    public Spiel(String titel, boolean online, boolean mehrspieler, int spieler, int preis)
     {
-        setTitel(neuTitel);
-        setOnline(neuOnline);
-        setMehrspieler(neuMehrspieler);
-        setSpieler(neuSpieler);
-        setPreis(neuPreis);
+        setTitel(titel);
+        setOnline(online);
+        setMehrspieler(mehrspieler);
+        setSpieler(spieler);
+        setPreis(preis);
     }
     
-    public Spiel(String neuTitel, boolean neuOnline, int neuSpieler)
+    public Spiel(String titel, boolean online, int spieler)
     {
-        setTitel(neuTitel);
-        setOnline(neuOnline);
-        setSpieler(neuSpieler);
+        setTitel(titel);
+        setOnline(online);
+        setSpieler(spieler);
     }
     
-    public Spiel(String neuTitel, boolean neuOnline)
+    public Spiel(String titel, boolean online)
     {
-        setTitel(neuTitel);
-        setOnline(neuOnline);
+        setTitel(titel);
+        setOnline(online);
     }
     
     /* Signatur bereits vorhanden
@@ -56,7 +56,7 @@ public class Spiel
    
     public Spiel(String neuTitel)
     {
-        setTitel(neuTitel);
+        setTitel(titel);
     }
     
     public String getTitel()
@@ -84,29 +84,29 @@ public class Spiel
         return preis;
     }
     
-    public void setTitel(String neuTitel)
+    public void setTitel(String titel)
     {
-        titel = neuTitel;
+        this.titel = titel;
     }
     
-    public void setSpieler(int neuSpieler)
+    public void setSpieler(int spieler)
     {
-        spieler = neuSpieler;
+        this.spieler = spieler;
     }
     
-    public void setOnline(boolean neuOnline)
+    public void setOnline(boolean online)
     {
-        online = neuOnline;
+        this.online = online;
     }
     
-    public void setMehrspieler(boolean neuMehrspieler)
+    public void setMehrspieler(boolean mehrspieler)
     {
-        mehrspieler = neuMehrspieler;
+        this.mehrspieler = mehrspieler;
     }
     
-    public void setPreis(int neuPreis)
+    public void setPreis(int preis)
     {
-        preis = neuPreis;
+        this.preis = preis;
     }
     
     public void printSpiel()
