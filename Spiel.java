@@ -5,7 +5,7 @@ public class Spiel
     private int spieler;
     private boolean online;
     
-    public void Spiel()
+    public Spiel(String neuTitel, int neuSpieler, boolean neuOnline)
     {
         setTitel("UNKN");
         setSpieler(0);
