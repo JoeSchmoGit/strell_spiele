@@ -5,6 +5,14 @@ public class Spiel
     private int spieler;
     private boolean online;
     
+    public void Spiel()
+    {
+        setTitel("UNKN");
+        setSpieler(0);
+        setOnline(false);
+    }
+    
+    
     public String getTitel()
     {
         return titel;
