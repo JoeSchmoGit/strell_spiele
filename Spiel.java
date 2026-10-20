@@ -111,6 +111,13 @@ public class Spiel
     
     public void printSpiel()
     {
-        System.out.println(titel + " Spiel: " + spieler + " Spieler - " + online);
+        if (online == true)
+        {
+            System.out.println(" Spiel:" + this.titel + " - " + this.spieler + " Spieler - " + "online");
+        }
+        else
+        {
+            System.out.println(" Spiel:" + this.titel + " - " + this.spieler + " Spieler - " + "offline");
+        }
     }
 }
