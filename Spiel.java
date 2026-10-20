@@ -7,9 +7,9 @@ public class Spiel
     
     public Spiel(String neuTitel, int neuSpieler, boolean neuOnline)
     {
-        setTitel("UNKN");
-        setSpieler(0);
-        setOnline(false);
+        setTitel(neuTitel);
+        setSpieler(neuSpieler);
+        setOnline(neuOnline);
     }
     
     
@@ -41,5 +41,10 @@ public class Spiel
     public void setOnline(boolean neuOnline)
     {
         online = neuOnline;
+    }
+    
+    public void printSpiel()
+    {
+        System.out.println(titel + " Spiel: " + spieler + " Spieler - " + online);
     }
 }
