@@ -89,11 +89,25 @@ public class Spiel
         this.titel = titel;
     }
     
+    /* wurde ersetzt
     public void setSpieler(int spieler)
     {
         this.spieler = spieler;
     }
-    
+    */
+    public void setSpieler(int spieler)
+    {
+        if ((spieler >= 1) && (spieler <= 100))
+        {
+            this.spieler = spieler;
+        }
+        else
+        {
+            System.out.println("Fehler: Die Spieleranzahl muss zwischen 1 und 100 sein!");
+            this.spieler = 1;
+        }
+    }
+   
     public void setOnline(boolean online)
     {
         this.online = online;
@@ -120,4 +134,5 @@ public class Spiel
             System.out.println(" Spiel:" + this.titel + " - " + this.spieler + " Spieler - " + "offline");
         }
     }
+    
 }
