@@ -97,7 +97,7 @@ public class Spiel
     */
     public void setSpieler(int spieler)
     {
-        if ((spieler >= 1) && (spieler <= 100))
+        if ((spieler > 1) && (spieler < 100))
         {
             this.spieler = spieler;
         }
