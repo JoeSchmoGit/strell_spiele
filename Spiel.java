@@ -84,6 +84,32 @@ public class Spiel
         return preis;
     }
     
+    
+    public void testen()
+    {
+        //System.out.println(genre.charAT(0));
+        //System.out.println(genre.charAT(2));
+        System.out.println(titel.indexOf(" "));
+    }
+    
+    public String getGenre()
+    {
+        int pos;
+        
+        pos = titel.indexOf(" ");
+        return titel.substring(0, pos);
+    }
+    
+    public String getSpieletitel()
+    {
+        int pos;
+        
+        pos = titel.indexOf(" ");
+        return titel.substring(pos+1);
+    }
+    
+   
+    
     public void setTitel(String titel)
     {
         this.titel = titel;
@@ -134,5 +160,7 @@ public class Spiel
             System.out.println(" Spiel:" + this.titel + " - " + this.spieler + " Spieler - " + "offline");
         }
     }
+    
+    
     
 }
