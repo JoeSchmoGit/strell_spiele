@@ -38,7 +38,7 @@ public class SpielTest
         Spiel schach;
         schach = new Spiel("Strategie Schach", 2, false);
         assertEquals ("Strategie", schach.getGenre());
-        assertEquals ("Schach", schach.getTitel());
+        assertEquals ("Schach", schach.getSpieletitel());
     }
     
     @Test
@@ -47,7 +47,7 @@ public class SpielTest
         Spiel mincraft;
         mincraft = new Spiel("Action Minecraft", 8, true);
         assertEquals ("Action", mincraft.getGenre());
-        assertEquals ("Minecraft", mincraft.getTitel());
+        assertEquals ("Minecraft", mincraft.getSpieletitel());
     }
     
     @Test
@@ -55,7 +55,7 @@ public class SpielTest
     {
         Spiel mariokart;
         mariokart = new Spiel("Rennen MarioKart", 12, true);
-        assertEquals ("Rennen MarioKart", mariokart.getGenre());
-        assertEquals ("Rennen MarioKart", mariokart.getTitel());
+        assertEquals ("Rennen", mariokart.getGenre());
+        assertEquals ("MarioKart", mariokart.getSpieletitel());
     }
 }
