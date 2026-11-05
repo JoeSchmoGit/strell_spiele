@@ -31,4 +31,31 @@ public class SpielTest
         fortnite = new Spiel("Fortnite", 2, true);
         assertTrue (fortnite.getSpieler() > 1 && fortnite.getSpieler() < 100);
     }
+    
+    @Test
+    public void spiele_genre_schach_test()
+    {
+        Spiel schach;
+        schach = new Spiel("Strategie Schach", 2, false);
+        assertEquals ("Strategie", schach.getGenre());
+        assertEquals ("Schach", schach.getTitel());
+    }
+    
+    @Test
+    public void spiele_genre_mincraft_test()
+    {
+        Spiel mincraft;
+        mincraft = new Spiel("Action Minecraft", 8, true);
+        assertEquals ("Action", mincraft.getGenre());
+        assertEquals ("Minecraft", mincraft.getTitel());
+    }
+    
+    @Test
+    public void spiele_genre_mariokart_test()
+    {
+        Spiel mariokart;
+        mariokart = new Spiel("Rennen MarioKart", 12, true);
+        assertEquals ("Rennen MarioKart", mariokart.getGenre());
+        assertEquals ("Rennen MarioKart", mariokart.getTitel());
+    }
 }
